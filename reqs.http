@@ -1,0 +1,14 @@
+@apiRoot = http://127.0.0.1:7071
+@id = Minuutjes
+
+###
+
+POST {{apiRoot}}/api/cloq/{{id}}
+
+###
+
+GET {{apiRoot}}/api/cloq/{{id}}
+
+###
+
+DELETE {{apiRoot}}/api/cloq/{{id}}

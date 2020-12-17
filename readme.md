@@ -1,0 +1,4 @@
+This solution has working code with the NuGets it has installed. When you run it and create a new Cloq Entity by calling POST /api/cloq/{name} it log every time Tick() is called (it'll schedule to be called after 5 seconds, but sometimes it can take longer). 
+
+To Reproduce the bug, upgrade the Microsoft.Azure.WebJobs.Extensions.DurableTask NuGet package to 2.4.0 (which is currently the latest version). 
+If you try the same as before, you will notice it will no longer log about Tick(). If you wait for a little while (never takes longer than 1 minute) it will log about something else running, and it will do this more often than the expected 5 seconds. 
